@@ -80,7 +80,7 @@ class BigramDataset(BigramDatasetBase, Dataset):
 
         if idx > length: idx = length
         
-        return self.data[idx: idx - self.block_size], self.data[idx + 1: idx - self.block_size + 1]
+        return self.data[idx: idx + self.block_size], self.data[idx + 1: idx + self.block_size + 1]
 
 
 
